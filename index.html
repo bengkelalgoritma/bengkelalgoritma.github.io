@@ -1,21 +1,30 @@
 <html>
-  <title>Bengkel Algoritma</title>
-  <head>
-  <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-<!--Membuat Komentar-->
-    <!--Setiap objek yang diawali <style> dan ditutup </style> adalah CSS-->
-<!--memahami CSS dengan menguasai konsep : OBJEK dan PROPERTIES serta VALUE-->
-<!-- #atas adalah sebuah objek berupa ID dan width = Propesties dan 100 % adalah VALUE-->
-    <!--Mari Kita Coba Run Koding ini-->
-<!--menampilkan gambar di area #atas-->
-<!--memanggil ID #atas-->
-<div  id="atas">
-<!—menampilkan gambar-->
-<img class="satu" src="images/web_04.png" width="25%">
-<img class="dua" src="images/web_03.png" width="25%">
-<!--menutup ID #atas-->
+<head>
+<meta http-equiv="refresh" content="900" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<title>
+Bengkel Algoritma
+</title>
+<body>
+<div id="atas">
+<img class="satu" src="images/web_03.png" width="25%">
+<img class="dua" src="images/web_04.png" width="25%">
 </div>
-  </body>
+<button id="klikInfo">Informasi</button>
+<div id="tengah">
+<p align="justify">Selamat datang di Info Teknologi Informasi Dan Komunikasi Kota Prabumulih <b>(ITP Web)</b>. Website ini merupakan media informasi yang disusun berbasis web dan dapat diakses oleh perangkat komputer dan telepon seluler pintar (HP Android/IOS).
+Website ini dapat diakses dengan aplikasi penjelajah internet (Browser) seperti Google Chrome, Mozilla Firefox, Opera Browser, dan Aplikasi lainnya yang sejenis dengan aplikasi penjelajah internet (Browser).
+</p>
+</div>
+</body>
 </html>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#tengah").hide();
+$('#klikInfo').click(function(){
+$("#tengah").toggle();
+})
+});
+</script>
