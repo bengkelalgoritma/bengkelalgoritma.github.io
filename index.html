@@ -13,12 +13,33 @@ width:100%;
 background-color:yellow;
 position:fixed;
 }
+.satu{
+width: 100px;
+height: 50px;
+position: fixed;
+animation: satuanimasi 5s infinite;
+}
+@keyframes satuanimasi {
+from {left: 0px;}
+to {left: 1920px;}
+}
+.dua{
+width: 100px;
+height: 50px;
+position: fixed;
+animation: duaanimasi 5s infinite;
+}
+@keyframes duaanimasi {
+from {left: 1920px;}
+to {left: 0px;}
+}  
 </style>
 <!--menampilkan gambar di area #atas-->
 <!--memanggil ID #atas-->
 <div  id="atas">
 <!—menampilkan gambar-->
-<img src="images/web_01.png" width="25%">
+<img class="satu" src="images/web_01.png" width="25%">
+<img class="dua" src="images/web_02.png" width="25%">
 <!--menutup ID #atas-->
 </div>
   </body>
