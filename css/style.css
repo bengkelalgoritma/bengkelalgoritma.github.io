@@ -3,38 +3,32 @@ width:100%;
 height:auto;
 padding:0 auto;
 }
-#tengah{
+#home{
 width:100%;
-background-color:snow;
-}
-.clearfix {
-overflow: auto;
-}
-.kiri{
+background-color:yellow;
 float:left;
-width:45%;
 }
-.kanan{
+#home h3{
+color:red;
+width:100%;
+margin-bottom:auto;
+margin-top:1em;
+}
+#home h3:hover{
+color:black;
+}
+#home p{
+color:blue;
+width:100%;
+padding-left:0.5em;
+align-content:justify;
+}
+#home img{
 float:left;
-width:45%;
+width:100%;
 }
-.satu{
-width: 100px;
-height: 50px;
-position: fixed;
-animation: satuanimasi 5s infinite;
-}
-@keyframes satuanimasi {
-from {left: 0px;}
-to {left: 1920px;}
-}
-.dua{
-width: 100px;
-height: 50px;
-position: relative;
-animation: duaanimasi 5s infinite;
-}
-@keyframes duaanimasi {
-from {left: 1920px;}
-to {left: 0px;}
+#home img:hover{
+float:left;
+width:75%;
+border-radius:2em;
 }
