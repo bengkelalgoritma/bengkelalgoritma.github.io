@@ -1,20 +1,27 @@
 <html>
 <head>
-<meta http-equiv="refresh" content="900" />
-<link rel="stylesheet" href="css/style.css">
-</head>
 <title>
 Bengkel Algoritma
 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="30" />
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 <div id="atas">
-<img class="satu" src="images/web_03.png" width="25%">
-<img class="dua" src="images/web_04.png" width="25%">
+<marquee><h3>HTML + CSS + JAVASCRIPT</h3></marquee>
 </div>
-<button id="klikInfo">Informasi</button>
-<div id="tengah">
-<p align="justify">Selamat datang di Info Teknologi Informasi Dan Komunikasi Kota Prabumulih <b>(ITP Web)</b>. Website ini merupakan media informasi yang disusun berbasis web dan dapat diakses oleh perangkat komputer dan telepon seluler pintar (HP Android/IOS).
-Website ini dapat diakses dengan aplikasi penjelajah internet (Browser) seperti Google Chrome, Mozilla Firefox, Opera Browser, dan Aplikasi lainnya yang sejenis dengan aplikasi penjelajah internet (Browser).
+<button id="klikInfo">Home</button>
+<button id="klikProfil">Profil</button>
+<div id="home">
+<h3>Home</h3>
+<img src="images/info.jpg"/>
+<p>
+Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
+Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
+Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
+Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
+Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
 </p>
 </div>
 </body>
@@ -22,9 +29,15 @@ Website ini dapat diakses dengan aplikasi penjelajah internet (Browser) seperti 
 <script src="js/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-$("#tengah").hide();
+$("#home").hide();
 $('#klikInfo').click(function(){
-$("#tengah").toggle();
+$("#home").toggle();
+})
+});
+$(document).ready(function(){
+$("#profil").hide();
+$('#klikProfil').click(function(){
+$("#profil").toggle();
 })
 });
 </script>
