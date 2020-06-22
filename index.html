@@ -1,43 +1,69 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>
-Bengkel Algoritma
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="30" />
-<link rel="stylesheet" href="css/style.css">
-</head>
 <body>
-<div id="atas">
-<marquee><h3>HTML + CSS + JAVASCRIPT</h3></marquee>
+<div style="margin-left:1em;margin-top:1em;margin-bottom:1.5em;margin-right:1em" id="demos">
+<body onload="loadXMLDoc()">
 </div>
-<button id="klikInfo">Home</button>
-<button id="klikProfil">Profil</button>
-<div id="home">
-<h3>Home</h3>
-<img src="images/web_01.png"/>
-<p>
-Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
-Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
-Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
-Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
-Pengembangan website menggunakan bahasa pemrograman HTML atau PHP saja belum cukup. Anda membutuhkan CSS, bahasa pemrograman yang bisa mengatur seluruh tampilan website sehingga terlihat lebih menarik dan sesuai dengan kebutuhan user. Itulah kenapa Anda perlu tahu pengertian CSS.
-</p>
+<div style="margin-left:1em;margin-top:1em;margin-bottom:-1.5em;margin-right:1em" id='tampilkanDatakursus'></div><br>
+<div style="margin-left:1em;margin-top:1em;margin-bottom:1.5em;margin-right:1em"><input style="width:3em;height:2em;background-color:yellow;color:black;font-size:3em;" type="button" onclick="previous()" value="<<<">
+<input style="width:3em;height:2em;background-color:green;color:black;font-size:3em;" type="button" onclick="next()" value=">>>">
 </div>
+<script>
+var i = 0;
+var x;
+displayDK(i);
+function displayDK(i) {
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+myFunction(this, i);
+}
+};
+xmlhttp.open("GET", "data_kursus.xml", true);
+xmlhttp.send();
+}
+function myFunction(xml, i) {
+var xmlDoc = xml.responseXML;
+x = xmlDoc.getElementsByTagName("DK");
+var img = document.createElement("img");
+var img = x[i].getElementsByTagName("LOGO")[0].childNodes[0].nodeValue;
+document.getElementById("tampilkanDatakursus").innerHTML =
+"<h4>" +
+x[i].getElementsByTagName("JENIS")[0].childNodes[0].nodeValue +
+"</h4><a href='" +
+x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue + ".html'" + "</br>" +
+"<img style='margin-top:0em;margin-bottom:-0.5em;' width='100%' src='"+img+"'>" +
+"<h4>" +
+x[i].getElementsByTagName("JUDUL")[0].childNodes[0].nodeValue + "</h4></a>" +
+"<p style='margin-top:-0.5em;margin-bottom:0em;' align='justify'>" +
+x[i].getElementsByTagName("DESKRIPSI")[0].childNodes[0].nodeValue + "</p>"
+;
+}
+function next() {
+if (i < x.length-1) {
+i++;
+displayDK(i);
+}
+}
+function previous() {
+if (i > 0) {
+i--;
+displayDK(i);
+}
+}
+</script>
+<script>
+function loadXMLDoc() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("demos").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "open.txt", true);
+xhttp.send();
+}
+</script>
 </body>
 </html>
-<script src="js/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-$("#home").hide();
-$('#klikInfo').click(function(){
-$("#home").toggle();
-})
-});
-$(document).ready(function(){
-$("#profil").hide();
-$('#klikProfil').click(function(){
-$("#profil").toggle();
-})
-});
-</script>
