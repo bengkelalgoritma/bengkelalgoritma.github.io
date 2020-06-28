@@ -4,117 +4,79 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Bengkel Algoritma</title>
+<title>Toko Online</title>
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <div id="atas">
-<h3>Menu Website</h3>
-<button id="klikIntro">Intro</button>
-<button id="klikDemo">Kursus</button>
-</div>
+<h3>Cari dan Pilih Produk/Jasa Kami Lalu Beli/Pesan</br>
+<p>Klik pada gambar untuk melakukan pembelian/pemesanan</p></h3>
 <div id="intro">
-<h3>Intro</h3>
-<p align="justify">
-Apakah anda karyawan, pengelola atau pemilik di instansi swasta atau mungkin aparatur sipil negara di instansi pemerintah
-atau bahkan siapapun anda yang mengalami stress pada saat harus menggunakan perangkat teknologi informasi dan komunikasi
-seperti komputer dan perangkat lainnya dikarenakan belum mengerti bagaimana cara kerja dan hal lainnya yang berhubungan
-dengan teknologi informasi dan komunikasi ?</br></br>
-Salman Al Farisi Islamic School Life Skills Education  disingkat <b>SAIS-LSE</b> akan menjadi pilihan untuk membantu anda dalam mengetahui, mempelajari dan mengembangkan
-kemampuan dan keahlian yang dibutuhkan untuk berhasil dalam pekerjaan dan kehidupan.</br></br>
-Bagi anda yang sedang membangun masa depan, jangan sia-siakan waktu dan kesempatan untuk mengembangkan minat dan mungkin
-bakat yang anda miliki. Kehidupan milenium ketiga, perangkat teknologi informasi dan komunikasi menjadi bagian di seluruh
-kehidupan manusia secara private maupun public. Di awal perkembangannya, perangkat teknologi dan komunikasi bertujuan untuk
-menghitung objek dalam jumlah yang sangat besar, pada saat ini, lebih dari sekedar itu.</br></br>
-Mengutip kalimat : <b>A Goal Without A Plan Is Just A Wish</b> (Antoine de Saint-Exupery), kami meyakini
-bakat dan keberuntungan mungkin terjadi pada anda secara kebetulan, tetapi belajar adalah keterampilan dan praktik
-yang dapat dilakukan siapa pun dengan tekun.</br></br>
-Kami tidak mengklaim bahwa kami yang terbaik dalam memberikan jasa pelayanan pendidikan, akan tetapi kami memiliki
-prinsip mengacu pada kutipan sebelumnya <b>A Goal Without A Plan Is Just A Wish</b>. Pelayanan pendidikan kami memiliki prinsip
-SMART. Dimana S adalah Specific (spesifik/khusus), M adalah Measurable (terukur), A adalah Archievable (tercapai),
-R adalah (relevan) dan T adalah Trackable (dapat dilacak).</br></br>
-Untuk mewujudkan prinsip SMART tersebut diatas, kami selalu berupaya untuk mengembangkan SDM untuk dapat menciptakan
-dan mengembangkan jasa pelayanan pendidikan kecakapan hidup yang sepenuhnya menerapkan penggunaan perangkat
-teknologi dan informasi bagi semua orang yang ada dalam lingkaran pembelajaran.
-</p>
-<div class="setengah">
-<img src="images/a1.png" width="100%"/>
-Menjadi Front End Developer Kreatif
-</div>
-<div class="setengah">
-<img src="images/a2.png" width="100%"/>
-Mengelola Kelas Virtual Dengan Google Classroom
-</div>
-</div>
-<div id="demo">
-<script>
-var i = 0;
-var x;
-displayDK(i);
-function displayDK(i) {
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-if (this.readyState == 4 && this.status == 200) {
-myFunction(this, i);
-}
-};
-xmlhttp.open("GET", "data_kursus.xml", true);
-xmlhttp.send();
-}
-function myFunction(xml, i) {
-var xmlDoc = xml.responseXML;
-x = xmlDoc.getElementsByTagName("DK");
-var img = document.createElement("img");
-var img = x[i].getElementsByTagName("LOGO")[0].childNodes[0].nodeValue;
-document.getElementById("tampilkanDatakursus").innerHTML =
-"<h4>" +
-x[i].getElementsByTagName("JENIS")[0].childNodes[0].nodeValue +
-"</h4><a href='" +
-x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue + "'" + "</br>" +
-"<img style='margin-top:0em;margin-bottom:-0.5em;' width='100%' src='"+img+"'>" +
-"<h4>" +
-x[i].getElementsByTagName("JUDUL")[0].childNodes[0].nodeValue + "</h4></a>" +
-"<p style='margin-top:-0.5em;margin-bottom:0em;' align='justify'>" +
-x[i].getElementsByTagName("DESKRIPSI")[0].childNodes[0].nodeValue + "</p>"
-;
-}
-function next() {
-if (i < x.length-1) {
-i++;
-displayDK(i);
-}
-}
-function previous() {
-if (i > 0) {
-i--;
-displayDK(i);
-}
-}
-</script>
 <onload="loadXMLDoc()">
-<div style="margin-left:1em;margin-top:1em;margin-bottom:-1.5em;margin-right:1em" id='tampilkanDatakursus'></div><br>
-<div style="margin-left:1em;margin-top:1em;margin-bottom:1.5em;margin-right:1em"><input style="width:3em;height:2em;background-color:yellow;color:black;font-size:3em;" type="button" onclick="previous()" value="<<<">
-<input style="width:3em;height:2em;background-color:green;color:black;font-size:3em;" type="button" onclick="next()" value=">>>">
+<p>Ketik Kata Pencarian Berdasarkan Jenis Produk/Jasa</br>
+Kursus - ATK - Elektronik - Jasa - Aplikasi</p>
+<input class="demo" type="text" id="myInput" onkeyup="myFunction()" placeholder="Kata Pencarian" title="Kata Pencarian">
+<p>Ketik Kata Pencarian Berdasarkan Nama Produk/Jasa</p>
+<input class="demo" type="text" id="myInputs" onkeyup="myFunctions()" placeholder="Kata Pencarian" title="Kata Pencarian">
+<table class="tabelnya" id="demo"></table>
 </div>
 </div>
 </body>
 </html>
-<script src="js/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-$("#demo").hide();
-$('#klikDemo').click(function(){
-$("#demo").toggle();
-})
-$('#klikDemo').mousemove(function(){
-$("#intro").hide();
-})
-$("#intro").hide();
-$('#klikIntro').click(function(){
-$("#intro").toggle();
-})
-$('#klikIntro').mousemove(function(){
-$("#demo").hide();
-})
-});
+var x,xmlhttp,xmlDoc
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "katalog.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+x = xmlDoc.getElementsByTagName("ITEM");
+table="<tr></tr>";
+for (i = 0; i <x.length; i++) {
+var img = document.createElement("img");
+var img = x[i].getElementsByTagName("PHOTO")[0].childNodes[0].nodeValue;
+table += "<tr></td><td><hr>";
+table +=x[i].getElementsByTagName("JENIS")[0].childNodes[0].nodeValue;
+table += "<hr></td><td>";
+table +=x[i].getElementsByTagName("NAMA")[0].childNodes[0].nodeValue;
+table += "<td><a href='https://api.whatsapp.com/send?phone=6281274460469&text=Kami%20tertarik%20dengan%20produk%20yang%20ditawarkan' target=_blank><img src='"+img+"'></a></td></h1></tr>";
+}
+document.getElementById("demo").innerHTML = table;
+</script>
+<script>
+function myFunction() {
+var input, filter, table, tr, td, i, txtValue;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+table = document.getElementById("demo");
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[0];
+if (td) {
+txtValue = td.textContent || td.innerText;
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+tr[i].style.display = "";
+} else {
+tr[i].style.display = "none";
+}
+}
+}
+}
+function myFunctions() {
+var input, filter, table, tr, td, i, txtValue;
+input = document.getElementById("myInputs");
+filter = input.value.toUpperCase();
+table = document.getElementById("demo");
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[1];
+if (td) {
+txtValue = td.textContent || td.innerText;
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+tr[i].style.display = "";
+} else {
+tr[i].style.display = "none";
+}
+}
+}
+}
 </script>
