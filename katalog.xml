@@ -1,1 +1,122 @@
-
+<KATALOG>
+<ITEM>
+<JENIS>Kursus</JENIS>
+<NAMA>Menjadi Front End Developer Kreatif</NAMA>
+<MERK>SAIS-LSE-001</MERK>
+<SATUAN>Paket Pembelajaran</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/a1.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Kursus</JENIS>
+<NAMA>Mengelola Kelas Virtual Dengan Google Classroom</NAMA>
+<MERK>SAIS-LSE-002</MERK>
+<SATUAN>Paket Pembelajaran</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/a2.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Kursus</JENIS>
+<NAMA>Mengelola Data Proyek Secara Profesional</NAMA>
+<MERK>SAIS-LSE-003</MERK>
+<SATUAN>Paket Pembelajaran</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/a3.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Kursus</JENIS>
+<NAMA>Menjadi Full Stack Developer Web Responsive</NAMA>
+<MERK>SAIS-LSE-004</MERK>
+<SATUAN>Paket Pembelajaran</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/a4.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Kursus</JENIS>
+<NAMA>Menjadi Content Maker</NAMA>
+<MERK>SAIS-LSE-005</MERK>
+<SATUAN>Paket Pembelajaran</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/a5.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>ATK</JENIS>
+<NAMA>Kertas HVS 70 GSM</NAMA>
+<MERK>SIDU</MERK>
+<SATUAN>Rim</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/b1.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>ATK</JENIS>
+<NAMA>Kertas HVS 80 GSM</NAMA>
+<MERK>SIDU</MERK>
+<SATUAN>Rim</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/b2.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>ATK</JENIS>
+<NAMA>Buku Gambar A4</NAMA>
+<MERK>SIDU</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/b3.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>ATK</JENIS>
+<NAMA>Buku Folio</NAMA>
+<MERK>Gelatik Kembar</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/b4.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>ATK</JENIS>
+<NAMA>Pulpen Tinta Gel Doraemon</NAMA>
+<MERK>Staedler</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/b5.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Elektronik</JENIS>
+<NAMA>Kabel Data USB</NAMA>
+<MERK>3 USB</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/c1.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Elektronik</JENIS>
+<NAMA>Webcam</NAMA>
+<MERK>3 TECH</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/c2.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Elektronik</JENIS>
+<NAMA>Wireless Keyboard</NAMA>
+<MERK>3 WIRE</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/c3.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Elektronik</JENIS>
+<NAMA>USB HDD</NAMA>
+<MERK>3 WIRE</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/c4.jpg</PHOTO>
+</ITEM>
+<ITEM>
+<JENIS>Elektronik</JENIS>
+<NAMA>Laptop</NAMA>
+<MERK>9 WIRE</MERK>
+<SATUAN>Buah</SATUAN>
+<HARGA>Rp. 1.000.000</HARGA>
+<PHOTO>images/c5.jpg</PHOTO>
+</ITEM>
+</KATALOG>
