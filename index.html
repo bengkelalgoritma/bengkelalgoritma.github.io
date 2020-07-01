@@ -8,17 +8,21 @@
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<!---Memanggil Div atas yang ada di /css/style.css-->
 <div id="atas">
 <h3>Cari dan Pilih Produk/Jasa Kami Lalu Beli/Pesan</br>
-<p>Klik pada gambar untuk melakukan pembelian/pemesanan</p></h3>
+<p>Klik pada kolom dengan tulisan <b>Order</b> untuk melakukan pembelian/pemesanan</p></h3>
+<!---Memanggil Div intro yang ada di /css/style.css-->
 <div id="intro">
+<!---Fungsi menampilkan katalog.xml pada saat onload-->
 <onload="loadXMLDoc()">
 <p>Ketik Kata Pencarian Berdasarkan Jenis Produk/Jasa</br>
 Kursus - ATK - Elektronik - Jasa - Aplikasi</p>
+<!---Class demo pada css id myInput pada css dan myFunction--> 
 <input class="demo" type="text" id="myInput" onkeyup="myFunction()" placeholder="Kata Pencarian" title="Kata Pencarian">
-<p>Ketik Kata Pencarian Berdasarkan Nama Produk/Jasa</p>
+<p>Ketik Kata Pencarian Berdasarkan ID/Kode Produk/Jasa</p>
 <input class="demo" type="text" id="myInputs" onkeyup="myFunctions()" placeholder="Kata Pencarian" title="Kata Pencarian">
-<table class="tabelnya" id="demo"></table>
+<table id="demo"></table>
 </div>
 </div>
 </body>
@@ -32,13 +36,15 @@ xmlDoc = xmlhttp.responseXML;
 x = xmlDoc.getElementsByTagName("ITEM");
 table="<tr></tr>";
 for (i = 0; i <x.length; i++) {
-var img = document.createElement("img");
-var img = x[i].getElementsByTagName("PHOTO")[0].childNodes[0].nodeValue;
-table += "<tr></td><td><hr>";
+table += "<tr></td><td>";
+table +=x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue;
+table += "</td><td>";
 table +=x[i].getElementsByTagName("JENIS")[0].childNodes[0].nodeValue;
-table += "<hr></td><td>";
+table += "</td><td>";
 table +=x[i].getElementsByTagName("NAMA")[0].childNodes[0].nodeValue;
-table += "<td><a href='https://api.whatsapp.com/send?phone=6281274460469&text=Kami%20tertarik%20dengan%20produk%20yang%20ditawarkan' target=_blank><img src='"+img+"'></a></td></h1></tr>";
+table += "</td><td>";
+table +=x[i].getElementsByTagName("HARGA")[0].childNodes[0].nodeValue;
+table += "<td><a href='" + x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue + ".html' target=_blank>Order</a></td></tr>";
 }
 document.getElementById("demo").innerHTML = table;
 </script>
@@ -50,7 +56,7 @@ filter = input.value.toUpperCase();
 table = document.getElementById("demo");
 tr = table.getElementsByTagName("tr");
 for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[0];
+td = tr[i].getElementsByTagName("td")[1];
 if (td) {
 txtValue = td.textContent || td.innerText;
 if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -68,7 +74,7 @@ filter = input.value.toUpperCase();
 table = document.getElementById("demo");
 tr = table.getElementsByTagName("tr");
 for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[1];
+td = tr[i].getElementsByTagName("td")[0];
 if (td) {
 txtValue = td.textContent || td.innerText;
 if (txtValue.toUpperCase().indexOf(filter) > -1) {
