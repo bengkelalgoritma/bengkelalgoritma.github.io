@@ -1,5 +1,6 @@
 <KATALOG>
 <ITEM>
+<ID>001</ID>
 <JENIS>Kursus</JENIS>
 <NAMA>Menjadi Front End Developer Kreatif</NAMA>
 <MERK>SAIS-LSE-001</MERK>
@@ -8,6 +9,7 @@
 <PHOTO>images/a1.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>002</ID>
 <JENIS>Kursus</JENIS>
 <NAMA>Mengelola Kelas Virtual Dengan Google Classroom</NAMA>
 <MERK>SAIS-LSE-002</MERK>
@@ -16,6 +18,7 @@
 <PHOTO>images/a2.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>003</ID>
 <JENIS>Kursus</JENIS>
 <NAMA>Mengelola Data Proyek Secara Profesional</NAMA>
 <MERK>SAIS-LSE-003</MERK>
@@ -24,6 +27,7 @@
 <PHOTO>images/a3.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>004</ID>
 <JENIS>Kursus</JENIS>
 <NAMA>Menjadi Full Stack Developer Web Responsive</NAMA>
 <MERK>SAIS-LSE-004</MERK>
@@ -32,6 +36,7 @@
 <PHOTO>images/a4.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>005</ID>
 <JENIS>Kursus</JENIS>
 <NAMA>Menjadi Content Maker</NAMA>
 <MERK>SAIS-LSE-005</MERK>
@@ -40,6 +45,7 @@
 <PHOTO>images/a5.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>006</ID>
 <JENIS>ATK</JENIS>
 <NAMA>Kertas HVS 70 GSM</NAMA>
 <MERK>SIDU</MERK>
@@ -48,6 +54,7 @@
 <PHOTO>images/b1.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>007</ID>
 <JENIS>ATK</JENIS>
 <NAMA>Kertas HVS 80 GSM</NAMA>
 <MERK>SIDU</MERK>
@@ -56,6 +63,7 @@
 <PHOTO>images/b2.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>008</ID>
 <JENIS>ATK</JENIS>
 <NAMA>Buku Gambar A4</NAMA>
 <MERK>SIDU</MERK>
@@ -64,6 +72,7 @@
 <PHOTO>images/b3.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>009</ID>
 <JENIS>ATK</JENIS>
 <NAMA>Buku Folio</NAMA>
 <MERK>Gelatik Kembar</MERK>
@@ -72,6 +81,7 @@
 <PHOTO>images/b4.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>010</ID>
 <JENIS>ATK</JENIS>
 <NAMA>Pulpen Tinta Gel Doraemon</NAMA>
 <MERK>Staedler</MERK>
@@ -80,6 +90,7 @@
 <PHOTO>images/b5.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>011</ID>
 <JENIS>Elektronik</JENIS>
 <NAMA>Kabel Data USB</NAMA>
 <MERK>3 USB</MERK>
@@ -88,6 +99,7 @@
 <PHOTO>images/c1.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>012</ID>
 <JENIS>Elektronik</JENIS>
 <NAMA>Webcam</NAMA>
 <MERK>3 TECH</MERK>
@@ -96,6 +108,7 @@
 <PHOTO>images/c2.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>013</ID>
 <JENIS>Elektronik</JENIS>
 <NAMA>Wireless Keyboard</NAMA>
 <MERK>3 WIRE</MERK>
@@ -104,6 +117,7 @@
 <PHOTO>images/c3.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>014</ID>
 <JENIS>Elektronik</JENIS>
 <NAMA>USB HDD</NAMA>
 <MERK>3 WIRE</MERK>
@@ -112,6 +126,7 @@
 <PHOTO>images/c4.jpg</PHOTO>
 </ITEM>
 <ITEM>
+<ID>015</ID>  
 <JENIS>Elektronik</JENIS>
 <NAMA>Laptop</NAMA>
 <MERK>9 WIRE</MERK>
