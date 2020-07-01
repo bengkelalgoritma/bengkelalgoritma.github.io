@@ -1,13 +1,10 @@
 #atas{
 width:auto;
-margin-left:1em;
-margin-top:1em;
-margin-bottom:1em;
-font-weight:1000;
+font-weight:750;
 }
 #demo{
 width:100%;
-font-weight:1000;
+font-weight:750;
 }
 #myInput{
 width:50%;
@@ -15,7 +12,7 @@ background-color:lightblue;
 border-style:solid;
 border-radius:0.25em;
 height:1.75em;
-font-weight:1000;
+font-weight:750;
 }
 #myInputs{
 width:50%;
@@ -24,30 +21,82 @@ border-style:solid;
 border-radius:0.25em;
 height:1.75em;
 margin-bottom:1em;
-font-weight:1000;
+font-weight:750;
 }
 #intro{
 width:auto;
-font-weight:1000;
+font-weight:750;
 }
 #intro p{
 color:blue;
-font-weight:1000;
+font-weight:750;
 }
 .tabelnya {
-width:100%;
-border: 0.25px solid grey;
+width:auto;
 border-radius:0.25em;
-font-weight:1000;
+font-weight:750;
 }
 .tabelnya img {
 width:100%;
-font-weight:1000;
+font-weight:750;
 }
 .tabelnya td,tr,th {
 width:auto;
+padding: auto;
 border: 0.25px solid grey;
 text-align-last: left;
 background-color:lightgreen;
-font-weight:1000;
+font-weight:750;
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+#atas{
+width:100%;
+font-weight:750;
+}
+#demo{
+width:100%;
+font-weight:750;
+}
+#myInput{
+width:50%;
+background-color:lightblue;
+border-style:solid;
+border-radius:0.25em;
+height:1.75em;
+font-weight:750;
+}
+#myInputs{
+width:50%;
+background-color:yellow;
+border-style:solid;
+border-radius:0.25em;
+height:1.75em;
+margin-bottom:1em;
+font-weight:750;
+}
+#intro{
+width:100%;
+font-weight:750;
+}
+#intro p{
+color:blue;
+font-weight:750;
+}
+.tabelnya {
+width:auto;
+border-radius:0.25em;
+font-weight:750;
+}
+.tabelnya img {
+width:100%;
+font-weight:750;
+}
+.tabelnya td,tr,th {
+width:auto;
+padding: auto;
+border: 0.25px solid grey;
+text-align-last: left;
+background-color:lightgreen;
+font-weight:750;
+}
 }
